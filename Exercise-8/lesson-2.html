@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let areArraysSame = (arrayOne, arrayTwo) => {
+            if (arrayOne.length !== arrayTwo.length) {
+                return false
+            };
+
+            for (let i = 0; i < arrayOne.length; i++) {
+
+                if (arrayOne[i] !== arrayTwo[i]) {
+                    return false
+                };
+            };
+
+            return true
+        };
+
+       console.log(areArraysSame([1, 2, 3], [1, 2, 3]));
+    </script>
+</body>
+
+</html>
